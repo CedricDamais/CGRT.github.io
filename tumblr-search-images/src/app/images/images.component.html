@@ -1,0 +1,6 @@
+<div class="images-container">
+    <div *ngFor="let item of images" class="image-card">
+      <img *ngIf="item.photos" [src]="item.photos[0].original_size.url" alt="{{ item.summary }}" />
+      <span>{{ item.summary }}</span>
+    </div>
+  </div>
