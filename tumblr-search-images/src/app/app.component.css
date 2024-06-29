@@ -1,26 +1,57 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+.app-container {
+  text-align: center;
+  padding: 40px 20px; /* Increased padding for better spacing */
+  background-color: #f8f9fa; /* Light background color for a modern look */
+}
 
-  h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #444;
-    text-align: center;
-  }
+h1 {
+  margin-bottom: 30px; /* Increased margin for better spacing */
+  font-size: 2.5em; /* Larger font size for better emphasis */
+  color: #343a40; /* Darker color for better readability */
+}
 
-  .app-container {
-    width: 100%;
-    max-width: 900px;
-    padding: 120px 20px 20px; /* Adjusted top padding */
-    box-sizing: border-box;
-  }
+.search-results {
+  margin-top: 180px; /* Space for the fixed search bar */
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff; /* White background for contrast */
+  padding: 20px; /* Padding for better spacing inside search results */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; /* Increased margin for better spacing */
+  position: relative;
+  z-index: 10; /* Ensure pagination is above images */
+}
+
+.pagination button {
+  padding: 12px 20px; /* Increased padding for a larger clickable area */
+  margin: 0 8px; /* Increased margin for better spacing */
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px; /* Increased border radius for a softer look */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Added subtle shadow for depth */
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift on hover for interactive feel */
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination button:disabled:hover {
+  background-color: #cccccc;
+  transform: none;
+}

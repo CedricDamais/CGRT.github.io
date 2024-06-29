@@ -1,5 +1,7 @@
 <div class="app-container">
   <h1>Welcome to Tumblr Search Images!</h1>
   <app-search (searchResults)="updateSearchResults($event)"></app-search>
-  <app-images [images]="searchResults"></app-images>
+  <div class="search-results">
+    <app-images [images]="searchResults"></app-images>
+  </div>
 </div>
