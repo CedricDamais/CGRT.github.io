@@ -5,12 +5,11 @@
     [(ngModel)]="searchText"
     (input)="onSearchChange()"
   />
-  <i class="fa fa-search search-icon"></i>
 </div>
 
 <form (ngSubmit)="onSearchChange()" class="filter-container">
   <div>
-    <label for="specificDate">Before Date:</label>
+    <label for="specificDate">Specific Date:</label>
     <input id="specificDate" [(ngModel)]="specificDate" name="specificDate" type="date">
   </div>
 

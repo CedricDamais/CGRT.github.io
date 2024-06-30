@@ -15,12 +15,13 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .search-container input {
-  width: 300px; /* Adjust width as needed */
+  width: 450px; /* Adjust width as needed */
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ddd;
@@ -37,7 +38,7 @@ body {
 }
 
 .filter-container {
-  margin-top: 100px; /* Initial margin-top; will be adjusted dynamically */
+  margin-top: 100px;
   padding: 20px;
   background-color: #ffffff;
   border-radius: 10px;
